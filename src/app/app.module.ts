@@ -7,10 +7,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+// added myself
+import { TabsPage } from '../pages/tabs/tabs';
+import { SearchPage } from '../pages/search/search';
+import { AddPage }  from '../pages/add/add';
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+
+    //some custom things
+    TabsPage,
+    SearchPage,
+    AddPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +29,12 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+
+    //custom things
+    TabsPage,
+    SearchPage,
+    AddPage
   ],
   providers: [
     StatusBar,
