@@ -15,7 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DesignersPage {
 
+  designer: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.designer = navParams.get("section");
   }
 
   ionViewDidLoad() {

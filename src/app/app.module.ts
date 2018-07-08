@@ -11,6 +11,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SearchPage } from '../pages/search/search';
 import { AddPage }  from '../pages/add/add';
+import { DesignersPage }  from '../pages/designers/designers';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { AddPage }  from '../pages/add/add';
     //some custom things
     TabsPage,
     SearchPage,
-    AddPage
+    AddPage,
+    DesignersPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { AddPage }  from '../pages/add/add';
     //custom things
     TabsPage,
     SearchPage,
-    AddPage
+    AddPage,
+    DesignersPage
   ],
   providers: [
     StatusBar,

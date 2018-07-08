@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DesignersPage }  from '../designers/designers';
 
 /**
  * Generated class for the SearchPage page.
@@ -16,6 +17,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SearchPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  designers(section) {
+    this.navCtrl.push(DesignersPage,
+      {section}
+    );
   }
 
   ionViewDidLoad() {
