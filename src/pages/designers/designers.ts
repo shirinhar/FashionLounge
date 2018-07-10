@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DesignersPage {
 
   designer: any;
+  makers = ["Hussain Bazaza", "Shirin Harandi", "kill me nw"];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.designer = navParams.get("section");
@@ -23,6 +24,10 @@ export class DesignersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesignersPage');
+  }
+
+  designer_page() {
+    // help
   }
 
 }

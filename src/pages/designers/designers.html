@@ -15,12 +15,12 @@
 
 <ion-content padding>
   <!-- add NgFor loop and query handler and such shit -->
-  <!-- <ion-card>
+  <ion-card *ngFor="let maker of makers; let i = index" id = "cards" (click)="designer_page(maker)">
 
-  <ion-card-header>
-    Card Header
-  </ion-card-header>
+    <ion-card-header>
+    {{maker}}
+    </ion-card-header>
 
-</ion-card> -->
+  </ion-card>
 
 </ion-content>
