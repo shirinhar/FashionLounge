@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 // added myself
+import { QueryHandler } from '../providers/query_handler';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SearchPage } from '../pages/search/search';
 import { AddPage }  from '../pages/add/add';
@@ -43,7 +44,9 @@ import { DesignersPage }  from '../pages/designers/designers';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+
+    QueryHandler
   ]
 })
 export class AppModule {}
